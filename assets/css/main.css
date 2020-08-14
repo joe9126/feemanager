@@ -1,0 +1,133 @@
+.main_container{
+    width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 0px;
+}
+.okBtn{
+    background-color: #3366ff;
+    color: white;
+}
+.notfounddiv{
+    width: 800px;
+    height: 30px;
+    margin-left: auto;
+    background: grey;
+    color: white;
+    margin-right: auto;
+   
+}
+#studentregtab{
+    display: block;
+}
+  #promotiontab,#archivestab{
+  display: none;   
+}
+.tabcontainer{
+    width: 1055px;
+    height: auto;
+    margin-top: 2px;
+    border-radius: 4px;
+    border: 1px solid #3366ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fieldset{
+    border: 1px solid #333333;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.controlset{
+    height: auto;
+    border: none;
+}
+.radiobtndiv{
+    
+}
+legend{
+    color: #000;
+    font-family: Raleway-Regular;
+}
+#rightdiv, #guard_right{
+    width: 330px;
+   /* height: 280px;*/
+    height: auto;
+    float: left;
+   /* background: yellow;*/
+}
+#leftdiv, #guard_left{
+    width: 340px;
+    /*height: 280px;*/
+    height: auto;
+    float: left;
+    background: white;
+    /*padding-left: 10px;*/
+}
+#centerdiv,#guard_center {
+    width:350px;
+    /*height: 280px;*/
+     height: auto;
+    float: left;
+    /* padding-left: 10px;*/
+}
+#registerbtn,#updatebtn{
+    margin-left: 60px;
+    margin-top: 100px;
+}
+#updatebtn{
+    background-color: green; 
+}
+#updatebtn:hover{
+    background: white;
+    color: green;
+    border: 2px solid green;
+}
+#passportpreviewdiv{
+    width: 150px;
+    height: 130px;
+    margin-top: 50px;
+    margin-left: 120px;
+    border-radius: 2px;
+    border: 1px solid #3366ff;
+    background-image: url('http://localhost/primepos/assets/images/icons/staff2.png');
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 100%;
+    margin-bottom: 0.1em;
+    padding-top: 0.6em;
+    padding-bottom: .6em;
+}
+input[type="radio"]{
+    margin-top: 10px;
+    color: #3366ff;
+}
+#password,#username{
+    width: 200px;
+}
+.radiotext{
+    color: #000;
+    font-family: Raleway-Regular;
+    font-size: 15px;
+}
+.nottext{
+    margin-top: 20px;
+    color: red;
+    width: auto;
+    font-family: Raleway-Regular;
+    font-size: 14px;
+}
+#studentinfodiv{
+   
+}
+.footerdiv{
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    width: 1100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+     margin-top: 0px;
+}

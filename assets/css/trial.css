@@ -1,0 +1,79 @@
+#dialogoverlay{
+	display: none;
+	opacity: .5;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+        background: #999999;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #333333;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+  #alertdialogbox{
+	display: none;
+	position: fixed;
+	background: #333333;
+	border-radius:7px; 
+	width:400px;
+	z-index: 10;
+}
+#dialogbox > div{ 
+    background:#3366ff;
+    margin:8px; 
+} 
+#alertdialogbox > div{ 
+    background:#3366ff; margin:8px; 
+}
+#dialogbox > div > #dialogboxhead{ 
+    background: #3366ff;
+    font-size:12px;
+    padding:5px; 
+    color:#FFF; 
+    font-family:Raleway-Regular; 
+}
+#alertdialogbox > div > #alertdialogboxhead{
+    background: #3366ff; 
+    font-size:15px; 
+    text-align: center;
+    padding:5px; 
+    color:#FFF; 
+    font-family:Raleway-Regular; 
+}
+
+#dialogbox > div > #dialogboxbody{ 
+    background: #FFF; 
+    padding:20px; 
+    color:#3366ff; 
+    font-family:Raleway-Regular;
+    font-weight: bold;
+    background-image:  url('http://localhost/feemaster/assets/images/icons/verify.png'); 
+    background-position: 460px 3px; /*position search icon*/
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 45px;
+}
+
+#alertdialogbox > div > #alertdialogboxbody{ 
+    background: #FFF; 
+    padding:20px; 
+    color:#3366ff; 
+    font-family:Raleway-Regular;
+   /* font-weight: bold;*/
+   background-image:  url('http://localhost/feemaster/assets/images/icons/warning.png'); 
+    background-position: 300px 3px; /*position search icon*/
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 45px;
+}
+#dialogbox > div > #dialogboxfoot{ background: #3366ff; padding:10px; text-align:right; }
+
+#alertdialogbox > div > #alertdialogboxfoot{ background: #fff; padding:10px; text-align:right; }
+
+ 
+
+        

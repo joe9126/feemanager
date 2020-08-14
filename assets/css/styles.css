@@ -1,0 +1,1329 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 22, 2019, 12:16:49 PM
+    Author     : jasewe
+*/
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url('../fonts/ubuntu/Ubuntu-Light.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url('../fonts/montserrat/Montserrat-Thin.ttf'); 
+}
+@font-face {
+  font-family: Raleway-Regular;
+  src: url('../fonts/raleway/Raleway-Regular.ttf'); 
+}
+
+::selection {
+  background: #333333; /* WebKit/Blink Browsers */
+   color: white;
+}
+::-moz-selection {
+  background:  #333333; /* Gecko Browsers */
+  color: white;
+}
+
+#userprofile{
+    background-color: white;
+    border-radius: 4px;
+    width: 150px;
+    height: 100px;
+    box-shadow: 2px 5px 20px #555;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    display: block;    
+}
+#userprof:hover #userprofile{
+    display: block;
+}
+#userprof{
+    float:right;
+}
+.profilelabel{
+    font-family: Raleway-Regular;
+    color: #3366ff;
+    font-size: 15px;
+   /* display: list-item;*/
+    text-align: center;
+    margin-top: 5px;
+}
+body{
+  /* background-color: #333333; */
+  background-color: white;
+}
+
+input[type="text"], input[type="password"],input[type="date"]{
+    color: #000000;
+   margin-top: 3px;
+    margin-left: 10px;
+     margin-bottom: 10px;
+     font-family: Raleway-Regular;
+    font-size: 12px;
+    border: 1px solid #3366ff;
+    border-radius: 4px;
+    float: left;
+     animation: bounce 1s;
+     width: 150px;
+     height:15px;
+     text-indent: 10px;
+       padding: 5px;
+      /* clear: both;*/
+}
+input[type="file"]{
+  color: #000;
+   margin-top: 3px;
+    margin-left: 10px;
+     margin-bottom: 10px;
+     font-family: Raleway-Regular;
+    font-size: 12px;  
+    float: left;
+     animation: bounce 1s;
+     width: 205px;
+     height:25px;
+     text-indent: 10px;
+       padding: 5px;
+}
+
+label{
+    color: #3366ff;
+   display: inline-block;   
+    font-family: Raleway-Regular;
+    text-align: left;
+    /*clear: both; */
+    float: left;
+    margin-top: 10px;
+    margin-right:5px;
+     margin-bottom:10px;
+     font-size: 15px;
+     animation: bounce 1s;
+     width: 100px;
+  /* background-color: yellow;*/
+}
+
+input[type="submit"], input[type="button"]{
+    width: 100px;
+    height: 30px;
+    float: left;
+    background: #3366ff;
+    font-family: Raleway-Regular;
+    font-weight: bolder;
+    font-size: 16px;
+    text-align: center;
+     padding: 2px 2px 2px 2px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid #000000;
+     margin: 5px 1px 5px 1px;
+      display: inline-block;
+      animation: bounce 1s;
+}
+button[type="submit"]:hover, button[type="button"]:hover, input[type="button"]:hover,input[type="submit"]:hover{
+    background-color: white;
+    color: #3366ff;
+    font-weight: bold;
+    border: 2px solid #3366ff;
+     margin: 5px 5px 5px 5px;
+   /* animation: bounce 1s;*/
+}
+#invetorydeleteBtn{
+    background-color: red;
+    border: 2px solid white;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    font-weight: bold;
+}
+#invetorydeleteBtn:hover{
+     background-color: white;
+      border: 2px solid red;
+     color: red;
+}
+select{
+    color: #000;
+    margin-top: 5px;
+    margin-left: 10px;
+     margin-bottom: 10px;
+     padding-bottom: 5px;
+     font-family: Raleway-Regular;
+    font-size: 12px;
+    border: 1px solid #3366ff;
+    border-radius: 4px;
+    float: left;
+     animation: bounce 1s;
+     width: 165px;
+     height: 25px;
+    
+}
+.systemtitle{
+    width: 1200px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; 
+}
+/*.invent_table{
+    background-color: white;
+   /* box-shadow: 1px 1px #3366ff;*/
+   /* overflow: hidden;*/
+  /*  overflow-y: scroll;
+}*/
+table{
+    border-collapse: collapse;
+    color: #3366ff;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+   
+}
+thead tr{
+    height: 2px;
+    padding: 5px 5px;
+    background-color:#555;
+    color: white;
+    font-size: 12px;
+    font-family: Ubuntu-Light;
+    font-size: 10px;
+    text-align: center;
+}
+tbody tr td{
+    padding: 5px 5px;
+    height: 5px;
+}
+thead tr:hover{
+    color: #3366ff;
+    background-color: white;
+}
+thead tr th, tbody tr td{
+     border: 1px solid #555;
+}
+tbody tr:hover{
+    background-color: #ffff00;
+  }
+  tbody tr{
+      height: 20px;
+  }
+  
+/*point of sale STYLES */
+#totalsaletxt, #cashtxt,#changetxt{
+    width: 190px;
+    height: 50px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size:40px;
+}
+#tabledelbtn{
+    width: 15px;
+    height:15px;
+}
+#tabledelbtn2{
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    width: 50%;
+    height:50%;
+    clear: right;
+    float: right;
+    background-image: url('http://localhost/primepos/assets/images/icons/delete.png');
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 100%;
+    margin-bottom: 0.1em;
+    padding-top: 0.6em;
+    padding-bottom: .6em;
+}
+.header_row{
+    background-color: #3366ff;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.maindiv{
+    width: 1200px;
+    height: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    /*background-color: #cccccc;*/
+    background-color: #f9f9f9;
+    border-radius: 1%;
+    border: 1px solid #3366ff;
+    box-shadow: inset 2px 5px 20px #555;
+    }
+ 
+/*Styling the menu bar*/
+.menu-bar{
+   
+}
+.menulist{
+    /*position: fixed;*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 4px; 
+     background-color: #ffffff;
+     border: 1px solid #3366ff;
+      width: 1200px;
+      margin-left: auto;
+    margin-right: auto;
+       
+}
+
+.menuitem{
+    float: left;
+   border-right: 1px solid #000; 
+ }
+ .dropdown-content{
+     display: none;
+     list-style: none;
+     font-family: Raleway-Regular;
+     position: absolute;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      background-color: #f9f9f9;
+   }
+   .dropdownmenu{
+       margin: 0;
+       text-align: left;
+   }
+ .dropdownmenu:hover .dropdown-content{
+     display: block;
+     background-color: blue;
+ }
+ 
+a{
+  /* padding: 8px; */
+}
+.menuitem a{
+    display: block;
+     color: #000;
+     font-size: 20px;
+     font-family: Raleway-Regular;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.menuitem a:hover{
+    color: #ffffff;
+    background-color: #333333;
+}
+
+
+.menuitem:last-child{
+  border-bottom: none;
+  float: right;
+  font-size: 20px;
+}
+.menuitem a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active{
+    background-color: #3366ff;
+    color: white;
+}
+.logoutpng{
+   width: 15px; height: 15px;
+ 
+}
+
+/* end of Styling the menu bar*/
+
+/*Styling POS  */
+.tabcontroller{
+    width: 1155px;
+    height: 30px;
+    margin: 10px 5px 0 20px;
+   /* background-color: #3366ff;*/
+  /* border: 1px solid #333333;*/
+}
+.tabhead{
+    height: 100%;
+    text-decoration: none;
+    border-radius: 4px 4px;
+    border: 1px solid #333333;
+    font-family: Raleway-Regular;
+    background-color: #333333;
+    color: white;
+    font-size: 15px;
+}
+.active{
+    background-color: #3366ff;
+}
+.tabhead:hover{
+    background-color: #3366ff;
+    color: white;
+}
+.holderdiv{
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 1195px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.left_main{
+    float: left;
+    width:500px;
+    margin-left: 15px;
+    margin-top: 15px;
+    /*background: red;*/
+   }
+   .center_main{
+       float: left;
+       width: 300px;
+      /* background: blue;*/
+   }
+   .right_main{
+       float: right;
+       width: 400px;
+       margin-top: 15px;
+       margin-right: 20px;
+  /* background: yellow;*/
+   }
+   .posLables{
+        margin: 7px 1px 2px 2px; 
+        font-size: 50px;
+   }
+  
+   #stocklogsearchdiv{
+       border: 1px solid #3366ff;
+       margin-bottom: 3px;
+       margin-top: 4px;
+       border-radius: 4px;
+   }
+.searchtext{
+     width: 500px;
+     height: 80px;
+    background-image: url('http://localhost/primepos/assets/images/icons/searchicon3.jpg'); /*sadd search icon to input  */ 
+    background-position: 450px 3px; /*position search icon*/
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 40px;
+   color: #3366ff;
+    border-bottom: none;
+    margin-bottom: 0;
+    border-radius: 21%;
+     box-shadow:   2px 5px 20px #555;
+    }
+     #list{
+         list-style-type: none;
+         background-color: white;
+         visibility: hidden;
+          color: #3366ff;
+            border-radius:2px;
+            font-family: serif;
+            width: 500px;
+            float:left;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin-top: 0px;
+            padding: 1px;
+           margin-left: 10px;
+           /* position: absolute;*/
+        }
+        #listitem{
+           /* margin-left: 0;*/
+            font-family: Raleway-Regular;
+            text-align: left;
+            cursor: pointer;
+          /*  display: block;*/
+           /* border: .5px solid #C0C0C0; */
+        }    
+        #listitem:hover{
+            background: #3366ff;
+            color: white;
+        }
+
+/*POS TOTALS*/
+.sale_totals{
+     margin-left: 800px;
+     margin-top: 0; 
+}
+.totalsale{
+    color: #00ff33;
+      text-align: center;
+      font-size: 150px;
+      font-weight: bolder;
+      height: 50px; 
+}
+
+.salestablediv{
+    float: left;
+    width: 1150px;
+    height: 255px;
+   /* border: 1px solid #3366ff;*/
+    margin-top: 1px;
+   background: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.posfieldset{
+    border-radius: 5px;
+    border: 1px solid #3366ff;
+    background-color: white;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .tableslegend{
+        font-family: Raleway-Regular;
+        color:#3366ff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+.poslowermaindiv{
+     width:1100px;
+     float: left;
+     margin-top:10px; 
+     margin-left: auto;
+     margin-right: auto;
+      background-color: yellow;
+}
+.purchaselisttitle{
+   /* float: left;*/
+ /*background-color: yellow;*/
+   margin-top: 230px;
+    margin-left: 15px;
+    font-family: Raleway-Regular;
+    font-weight: bold;
+    color: #3366ff;
+    font-size: 20px;
+    text-align: left;
+    width: 300px;
+}
+.salebtndiv{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+  /*  STYLE THE CONFIRM DIALOG*/  
+     .okBtn{
+         font-family: Raleway-Regular;
+         font-weight: bold;
+         background-color: white;
+         color: #3366ff;
+         width: 50px;
+         height: 25px; 
+         border-radius: 4px;
+          text-align: center;
+         padding: 5px 15px; 
+         border: none; 
+         text-decoration: none;
+     }
+     .okBtn:hover{
+         background-color: #555;
+         color: #ffffff;
+     }
+
+      /*END OF CONFIRM DIALOG STYLES  */
+      
+      
+      
+      /* INVENTORY MODULE STYLES */
+      
+div.pager span {
+    display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8;
+    text-align: center;
+    cursor: pointer;
+    background: #3366ff;
+    border-radius: 4px;
+    margin: 10px 10px 10px 10px;
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+div.pager span.active {
+    background: yellow;
+    color: red;
+    font-family: Raleway-Regular;
+}
+div.pager span:hover{
+     background: yellow;
+    color: red;
+}
+ 
+#additemqtybtn{
+    width: 50px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 1px;
+     margin-bottom: 1px;
+    border-radius: 2px;
+    border:none;
+    background-color: #3366ff;
+    color: white;
+    font-family: Raleway-regular;
+    text-decoration: none;
+    text-align: center;
+       
+}
+#additemqtybtn:hover{
+    border: 1px solid #3366ff;
+    color: #3366ff;
+    background-color: white;
+}
+.searchfield{
+    width: 400px;
+    height: 30px;
+    background-image: url('http://localhost/primepos/assets/images/icons/searchicon3.jpg'); /*sadd search icon to input  */ 
+    background-position: 370px 3px; /*position search icon*/
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 30px;
+    color: #3366ff;
+    border-bottom: none;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-family: Raleway-Regular;
+    border-radius: 4px;
+     box-shadow:   2px 5px 20px #555;
+}
+.invent_buttons_div{
+    float:left; 
+}
+   .stocktablediv {
+   /*  background: yellow;*/
+    width: 1130px;
+    float:left;
+    max-height: 450px;
+     margin-left: 10px;
+    
+}
+  .invent_tablediv {
+      width: 1100px;
+        float:left;
+        margin-left: 25px;
+  /*  background-color: white;
+    width: 1130px;
+     height: 600px;
+  
+    margin-top: 5px;
+    max-height: 430px;
+    box-shadow: 0 0 1px 1px #3366ff;
+  
+  border-radius: 5px; */
+}
+.gensalestablediv{
+ /*background-color: blue; */
+    width: auto;
+    margin-top: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 5px;
+    /*overflow-y: scroll;*/
+}
+.gensalestablefieldset{
+    width: 300px;
+    height: 300px;
+   /* background: yellow;*/
+}
+
+      .controls-fieldset{
+        border: none;       
+      }
+      .controls-legend{
+          font-family: Raleway-Regular;
+          color: #3366ff;
+          
+      }
+      .invent_itemtablediv,.stockmantabdiv,.stockmantabdiv2 {
+           width: 1155px;
+          height: 549px;
+          border: 1px solid #3366ff;
+          border-radius: 4px;
+           margin-top:5px; 
+          margin-left: auto;
+          margin-right: auto;
+     /*  background-color: yellow; */
+      }
+    
+      #registeritemdialog{
+	 display: none;
+         width: 820px;
+        /*width: auto;*/
+         height: auto;
+         /* max-height: 500px;*/
+          position: fixed;
+         /* border: 1px solid #3366ff;*/
+          border-radius: 7px;
+         box-shadow: 18px 8px 18px 18px rgba(0,0,0,0.2); 
+          background-color: white; 
+          margin-top:1px; 
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 10;
+}
+ 
+.closedialog{
+    top: 0px;
+    right: 25px;
+    position: absolute;
+      margin-bottom: 15px; 
+    }
+    #closebutton, #transclosebutton{
+        text-decoration: none;
+        border: none;
+        border-radius: 1px;
+        width: 25px;
+        height: 20px;
+        position: absolute; 
+        background-color: red;
+        color: white;
+        font-weight: bold;
+    }
+    #closebutton:hover{
+        background-color: white;
+        border:1px solid red;
+        color:red;
+    }
+    #inventorysubmitbtn{
+        margin-top: 22px;
+        margin-left: 120px;
+    }
+
+.dialogtitle{
+  width: auto;
+    height: auto;
+    border: 1px solid #3366ff;
+     border-radius: 7px;
+     /* box-shadow: inset 2px 5px 5px #555;*/
+      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+}
+.staffregisterfieldset{
+  width:auto;
+    height:300px;
+  
+   /* border: 1px solid #3366ff;*/
+    /* border-radius: 7px;*/
+     /* box-shadow: inset 2px 5px 5px #555;*/
+      margin-bottom: 10px;
+}
+.userregisterfieldset{
+    border: none;
+    height: 250px;
+   /* background-color: yellow;*/
+}
+.moduleauth_div{
+    width: 1100px;
+    height: 258px;
+    border: 1px solid #3366ff;
+     border-radius: 7px;
+     /* box-shadow: inset 2px 5px 5px #555;*/
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+}
+.legend{
+    font-family: Raleway-Regular;
+    color: #000;
+}
+#legendtxt{
+    font-family:Raleway-Regular;
+    color: #3366ff;
+    font-weight: bold;
+   /* background-color: whitesmoke;*/
+}
+      
+      .invent_top_left_div{
+          float: left;
+          width: 250px;
+          height: 320px;
+  /*  background-color: yellow;*/
+      }
+      .invent_top_middle_div{
+          float: left;
+          width: 250px;
+          height: 320px;
+         /* background-color: blue; */
+      }
+      .invent_buttons_div{
+          float: left;
+          width: 250px;
+          height: 50px;
+          margin-top: 5px;
+          margin-left: 25px;
+       /* background-color: red;*/
+      }
+      .labelsdiv{
+          float: left;
+          width: 400px;
+ /*background-color: white;*/
+      }
+      .poslabelsdiv{
+           float: left;
+         /* background-color: white;*/
+          width: 180px;
+      }
+      .poscontrolsdiv{
+         float: left;
+         /*background-color: blue;*/
+         width: 200px
+      }
+      .rightbtndiv{
+          margin-top: 210px;
+          /*background-color: white;*/
+          float: left;
+          width: 50px;
+      }
+      .leftbtndiv{
+           margin-top: 210px;
+          float: left;
+          width: 140px;
+      }
+      #stockmanagementtab,#stockmanagementtab2{
+          display: none;
+      }
+      .noticespan{
+        /*display: inline-block;*/
+        font-size: 15px;
+        font-family: Raleway-Regular;
+        color: red; 
+        padding: 0;
+       /* background-color: pink;*/
+      }
+      /** END OF INVENTORY MODULE STYLES/
+      
+      /*FORM VALIDATION STYLES */
+      .error{
+        /* text-indent: 50px;*/
+        /* background: yellow;*/
+          color: red;
+          width: auto;
+          font-family: Raleway-Regular;
+          margin-left: 10px;
+          margin-top: 5px;
+          font-size: 10px;
+          margin-bottom: 5px;
+      }
+            /* END OF FORM VALIDATION STYLES*/
+            
+ /*SETTINGS MODULE STYLES*/
+ .tabcontainerdiv{
+   width: 1160px;
+          height: 550px;
+          border: 1px solid #3366ff;
+          border-radius: 4px;
+           margin-top:5px; 
+          margin-left: auto;
+          margin-right: auto;
+     
+ } 
+ #useraccountstablediv{
+    /* margin-top: 3px;*/
+ }
+
+ #set_staffTab,#set_usersTab,#set_systemTab,#set_storesTab{
+     display: none;
+ }
+  .stafflowermaindiv{
+   float: left;
+     width: 1150px;
+     height: auto;
+     margin-left: 5px;
+     margin-right: auto;
+    /* margin-top: px;*/
+  /* background-color: yellow; */
+ }
+  .stafftoptab{
+      float: left;
+     margin-top:5px;
+     margin-left: auto;
+     margin-right: auto;
+   /*  background-color: red;*/
+     width: 1160px;
+     height: 200px;
+     display: block;
+ }
+ .left_maindiv{
+     margin-left:10px; 
+     width: 370px;
+     height:200px;
+  /*  background-color: yellow; */
+     float: left;
+ }
+ .center_maindiv{
+     width: 370px;
+     height:200px;
+ /*background-color: red;*/
+     float: left; 
+ }
+  .right_maindiv{
+     width: 370px;
+     height:200px;
+    /* background-color: blue;*/
+     float: left; 
+ }
+ .staffcontrols-fieldset{
+          border: 1px solid #3366ff;
+          border-radius: 4px;
+          height: 180px;
+      }
+/*
+ .lowermaindiv{
+     float: left;
+     width: 1000px;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5px;
+   background-color: yellow;
+ }
+ */
+
+ .staffsubmit{
+     margin-top: 95px;
+     margin-left: 100px; 
+ }
+ .staffregistertable thead tr td{
+     font-family: Ubuntu-Light;
+    background-color: #555;
+    color: white;
+}
+.staffregistertable tbody tr td{
+     text-align: left;
+    /* font-size: 10px;
+     font-family: Ubuntu-Light;*/
+ }
+ /*.staffregistertable{
+     width: auto;
+      display: block;
+     margin-top: 10px;
+ }*/
+ #stafftablediv{
+    border-radius:4px;
+   /* background-color: red;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: auto;
+   }
+ 
+ .minifieldset{
+     border: 1px solid #3366ff;
+     border-radius: 4px;
+    height: 230px;
+    max-height: 300px;
+     }
+ .minilegend{
+ font-family: Raleway-Regular;
+ color: #3366ff;
+   }
+   .staffDpdiv{
+       width: 100px;
+       height: 100px;
+       background: white;
+       background-image: url('http://localhost/primepos/assets/images/icons/staff2.png'); /*add search icon to div  */ 
+       background-position:center; /*position search icon*/
+        background-repeat: no-repeat; /* do not repeat search icon */ 
+        background-size: 100px;
+   }
+  #simpleinput, #user_password, #user_passwordconfirm,#user_username{
+       width: 140px;
+       height: 10px;
+        margin-top: 10px;
+          }
+          
+  #user_station,#user_title{
+    width: 140px;
+    height: 10px;
+    background-color: #cccccc;
+    margin-top: 10px;
+          }        
+          
+   #staffname, #station,#user_status,#user_selectstation,#user_auth,#salesstaffname{
+              width: 150px;
+              margin-left: 10px;
+              height: 22px;
+              border-radius: 4px;
+              border: 1px solid #3366ff;
+              font-family: Raleway-Regular;
+              color: #3366ff;
+              margin-bottom: 10px;
+              animation: bounce 1s;
+              margin-top: 10px;
+     }
+   .simplelabel{
+   font-size: 20px;
+   width: 25px;
+       }
+       #submituseraccountbtn{
+           margin: 130px 0 10px 130px;
+           width: 80px;
+           font-size: 12px;
+       }
+ /*END OF SETTINGS MODULE STYLES*/
+
+ 
+ /*  START OF SALES MODULE STYLES */
+ #sales_analysisTab,#sales_marginTab,#sales_other1Tab,#sales_other2Tab{
+     display: none;
+ }
+ #viewtransactiondiv{
+      width: 1000px;
+        display: none;
+         height: auto;
+          max-height: 500px;
+          position: fixed;
+         /* border: 1px solid #3366ff;*/
+          border-radius: 7px;
+          box-shadow: 18px 8px 18px 18px rgba(0,0,0,0.2); 
+          background-color: white; 
+          margin-top:1px; 
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 20;
+ }
+ .transactionfieldset{
+     margin-top: 5px;
+     border-radius: 5px;
+     border: 1px solid #3366ff;
+     
+ }
+ #dialogspantitle{
+     color: #3366ff;
+     font-size: 20px;
+ }
+ .transdetailstablediv{
+     /*margin-top: 5px;*/
+     width: auto;
+     border-radius: 4px;
+     border: 1px solid #3366ff;
+ }
+ #transnolable{
+     font-family: Raleway-Regular;
+     font-size: 30px;
+     margin-top: 0;
+     width: auto;
+     /*text-decoration: underline;*/
+     display: inline-block;
+  }
+  #transno{
+    font-family: Raleway-Regular;
+     font-size: 30px;
+     width: auto;  
+     border: none;
+     padding: 0;
+    color: red;
+  }
+  #transdateshow,#subtotalshow,#vatshow,#grandtotalshow,#discountshow,#transcashiershow,#transitemsqtyshow,
+  #pcmarginshow,#marginshow,#costshow{
+      background-color: #cccccc;
+      font-size: 15px;
+      text-align: left;
+      width: 150px;
+  }
+  #transbreakdowncontainer{
+      margin-top: 10px;
+    /* background-color: magenta; */
+      width: auto;
+      height: 200px;
+    /* box-shadow: inset 5px 5px 5px #555;*/
+  }
+  #trans_leftdiv,#trans_middlediv{
+      border: 1px solid #3366ff;
+      border-radius: 4px;
+     float: left;
+     width: 280px;
+      height: 170px;
+     /*background-color: yellow;*/
+        }
+ #trans_rightdiv{
+    border: 1px solid #3366ff;
+      border-radius: 4px;
+     float: left;
+     width: 320px;
+      height: 170px;         
+  }      
+  
+  #transdetailsdiv{
+      float: left;
+      width: 970px;
+      height: 200px;
+     /* background-color: orange;*/
+  }
+  #printtransactionbtn{
+      margin-left: 180px; 
+  }
+  .tabmaindiv{
+       width: 1155px;
+          height: 600px;
+        /*  border: 1px solid #3366ff;*/
+          /*border-radius: 4px;*/
+           margin-top:5px; 
+          margin-left: auto;
+          margin-right: auto;
+  }
+  .sale_analysistablediv{
+      width: 1130px;
+      height: auto;
+      max-height: 450px;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #3366ff;
+     /* background-color: yellow;*/
+  }
+  #searchbydatefieldset{
+     border-radius: 4px;
+     border: 1px solid #3366ff;
+     width: 1100px;
+     margin-left: auto;
+     margin-right: auto; 
+  }
+  #searchdatediv{
+      margin-left: auto;
+      margin-right: auto;
+       /*background: yellow;*/
+  }
+  #topleftanalysisdiv{
+      float: left;
+      width: 450px;
+      height: auto;
+      /* background: #3366ff;*/
+  }
+  #toprightanalysisdiv{
+      float: left;
+      /*background: red;*/
+      width: auto;
+      margin-top: 18px;
+      margin-bottom: auto;
+  }
+  #todateanalysis,#fromdateanalysis, #gensalesfromdate,#gensalestodate{
+      width: 140px;
+      display: inline-block;
+  }
+  .gensalessearchdatelabel{
+      width: 25px;
+      clear: both;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .salessearchdatelabel{
+      display: inline-block;
+     margin-left: 10px;
+     text-align: right;
+     font-size: 16px;
+     width: 50px;
+  }
+  #printanalysisbtn{
+      margin-left: 20px; 
+  }
+  .gensalescontrolsdiv{
+      width: 1110px;
+      height: 120px;
+      margin-left: auto;
+      margin-right:auto;
+     /* background: #3366ff; */
+  }
+  #gensales_datefieldset, #gensales_cashierfieldset{
+      float: left;
+      width: 300px;
+      height: 110px;
+      border-radius: 4px;
+      border: 1px solid #3366ff;
+  }
+  #salestransactionstab{
+   border: 1px solid #3366ff;
+   width: 1120px;
+   height: 330px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+   border-radius: 4px;
+   /*background-color: yellow;*/
+  }
+  #generalitemsalestab{
+   display: none;
+   border: 1px solid #3366ff;
+   width: 1120px;
+   height: 330px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+   border-radius: 4px;
+  /* background: red;*/
+  }
+
+ #gensalestableholderdiv{
+     float: left;
+     margin-top: 10px;
+      height: 330px;
+      width: 1120px;
+    /*  background: yellow;*/
+  }
+   #salesitemtablediv {
+      height: 300px;
+      width: 1120px;
+      display: block;
+     /*background: yellow;*/
+  }
+  #salesitemstable{
+      width:1100px;;
+      height: 200px;
+    /*  background: pale#3366ff;*/
+  }
+  #salestableholderdiv{
+      float: left;
+      margin-top: 5px;
+      margin-left:5px;
+      margin-right: auto;
+      width: 1100px;
+      border: none;
+      height: 200px;
+      display: block;
+      background-color: blue;
+      border-radius: 10px;
+  }
+  #searchdiv,#transsearchdiv{
+     /* background-color: yellow;*/
+      float: left;
+      width: auto;
+      height: 50px;
+  }
+  #generalsalestablediv{
+      float:left;
+      width: 1100px;
+      margin-left: 10px;
+      margin-right: auto;
+      margin-top: 5px;
+     /* height: 500px;*/
+    /*  background-color: yellow;*/
+  }
+  
+  #stocklogfromdate,#stocklogtodate{
+      padding: 5px 10px 10px 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+       box-shadow:   2px 5px 20px #555;
+  }
+  #stocklogsearchdiv{
+      /*background-color: yellow;*/
+      width: 1100px;
+      height: 60px;
+      margin-left:auto;
+      margin-right: auto;
+  }
+  #stocklogtablediv{
+      width: 1100px;
+      height: auto;
+      margin-left: auto;
+      margin-right:auto;
+      border-radius: 4px;
+  }
+ /*END OF SALES MODULE STYLES */
+ 
+ /* dataTable styles */
+ .tabindex{
+     color: blue;
+ }
+ #tablesearchtxt{
+     float: left;
+    border-radius: 4px;
+    border: 1px solid #3366ff;
+    height: 25px;
+    color: #3366ff;
+    font-family: Raleway-Regular;
+}
+#datatablesearchtxt,#transsearchtxt{
+    width: 300px;
+    height: 25px;
+    background-image: url('http://localhost/primepos/assets/images/icons/searchicon3.jpg'); /*sadd search icon to input  */ 
+    background-position: 280px 3px; /*position search icon*/
+    background-repeat: no-repeat; /* do not repeat search icon */ 
+    background-size: 30px;
+    color: #3366ff;
+    border-bottom: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Raleway-Regular;
+    border-radius: 4px;
+     box-shadow:   2px 5px 20px #555;
+}
+.dataTables_filter {
+   display: none;
+}
+.dataTables_info, .dataTables_paginate{
+    font-family: Raleway-Regular;
+    color: #3366ff;
+    font-size: 15px;
+}
+.paginate_button {
+    /*background-color: #3366ff;*/
+    border-radius: 10px;
+    color: #fff;
+}
+.paginate_button current{
+     background-color: #3366ff;
+}
+.ellipsis{
+    color: #3366ff;
+}
+/* END OF DATATABLE STYLES*/
+ 
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+
+
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Responsive ]*/
+
+
+/* KEYFRAMES */
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
